@@ -1,0 +1,10 @@
+# Cloudflare Pages / Cloudflare static headers configuration
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  Referrer-Policy: strict-origin-when-cross-origin
+
+# Static image assets - cache for 1 year at Cloudflare edge
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+  Access-Control-Allow-Origin: *
